@@ -4,7 +4,7 @@
 #
 Name     : pypi-awxkit
 Version  : 19.4.0
-Release  : 14
+Release  : 15
 URL      : https://files.pythonhosted.org/packages/ee/77/b792fb011c63efbe37bcd78b700d039d95ce57ebcfedea3fd8b219347574/awxkit-19.4.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ee/77/b792fb011c63efbe37bcd78b700d039d95ce57ebcfedea3fd8b219347574/awxkit-19.4.0.tar.gz
 Summary  : The official command line interface for Ansible AWX
