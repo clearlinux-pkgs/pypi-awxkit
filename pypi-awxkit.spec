@@ -6,10 +6,10 @@
 # autospec commit: da8b975
 #
 Name     : pypi-awxkit
-Version  : 23.8.0
-Release  : 19
-URL      : https://files.pythonhosted.org/packages/02/a8/5fb065a45ec62ad3817b409a967efca1983dc2f0cabca006982466c1db62/awxkit-23.8.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/02/a8/5fb065a45ec62ad3817b409a967efca1983dc2f0cabca006982466c1db62/awxkit-23.8.0.tar.gz
+Version  : 23.8.1
+Release  : 20
+URL      : https://files.pythonhosted.org/packages/17/57/c6474904abcb481fa93f1d34203aadc547d99743f5e5044ef9b110170c44/awxkit-23.8.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/17/57/c6474904abcb481fa93f1d34203aadc547d99743f5e5044ef9b110170c44/awxkit-23.8.1.tar.gz
 Summary  : The official command line interface for Ansible AWX
 Group    : Development/Tools
 License  : Apache-2.0
@@ -20,6 +20,7 @@ BuildRequires : buildreq-distutils3
 BuildRequires : pypi(py)
 BuildRequires : pypi(pyyaml)
 BuildRequires : pypi(requests)
+BuildRequires : pypi(setuptools)
 BuildRequires : pypi-pluggy
 BuildRequires : pypi-pytest
 BuildRequires : pypi-tox
@@ -57,16 +58,17 @@ Requires: python3-core
 Provides: pypi(awxkit)
 Requires: pypi(pyyaml)
 Requires: pypi(requests)
+Requires: pypi(setuptools)
 
 %description python3
 python3 components for the pypi-awxkit package.
 
 
 %prep
-%setup -q -n awxkit-23.8.0
-cd %{_builddir}/awxkit-23.8.0
+%setup -q -n awxkit-23.8.1
+cd %{_builddir}/awxkit-23.8.1
 pushd ..
-cp -a awxkit-23.8.0 buildavx2
+cp -a awxkit-23.8.1 buildavx2
 popd
 
 %build
@@ -74,7 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1707864149
+export SOURCE_DATE_EPOCH=1708099571
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
