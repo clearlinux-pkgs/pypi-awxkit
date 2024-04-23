@@ -1,5 +1,5 @@
 PKG_NAME := pypi-awxkit
-URL = https://files.pythonhosted.org/packages/64/8d/058c9a760ec392dfc3b9c1853b18b907333a34302674baf740180e95bcf3/awxkit-24.2.0.tar.gz
+URL = https://files.pythonhosted.org/packages/8d/0d/d6c1758af3fa5b369816f1714105a184d5a2a07abb1f69ae717647e05593/awxkit-24.3.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
