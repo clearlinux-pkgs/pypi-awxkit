@@ -6,10 +6,10 @@
 # autospec commit: 5905be9
 #
 Name     : pypi-awxkit
-Version  : 24.3.1
-Release  : 26
-URL      : https://files.pythonhosted.org/packages/cf/e3/4fe4aab4631e46c73a6b48ba6edc8c22c194ad2cddd621a538440caceb5a/awxkit-24.3.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/cf/e3/4fe4aab4631e46c73a6b48ba6edc8c22c194ad2cddd621a538440caceb5a/awxkit-24.3.1.tar.gz
+Version  : 24.4.0
+Release  : 27
+URL      : https://files.pythonhosted.org/packages/0e/eb/d2774e1e2e6c92d7774a8c1247ffe9a0b6d62ee172d1efa2bacdd015761f/awxkit-24.4.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/0e/eb/d2774e1e2e6c92d7774a8c1247ffe9a0b6d62ee172d1efa2bacdd015761f/awxkit-24.4.0.tar.gz
 Summary  : The official command line interface for Ansible AWX
 Group    : Development/Tools
 License  : Apache-2.0
@@ -65,10 +65,10 @@ python3 components for the pypi-awxkit package.
 
 
 %prep
-%setup -q -n awxkit-24.3.1
-cd %{_builddir}/awxkit-24.3.1
+%setup -q -n awxkit-24.4.0
+cd %{_builddir}/awxkit-24.4.0
 pushd ..
-cp -a awxkit-24.3.1 buildavx2
+cp -a awxkit-24.4.0 buildavx2
 popd
 
 %build
@@ -76,7 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1714572658
+export SOURCE_DATE_EPOCH=1716479053
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
